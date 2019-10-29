@@ -4,7 +4,7 @@ import rpn
 class TestBasics(unittest.TestCase):
     def test_exp(self):
         result = rpn.calculate("3 3 ^")
-        self.assert(27, result)
+        self.assertEqual(27, result)
     def test_mult(self):
         result = rpn.calculate("4 3 *")
         self.assertEqual(12, result)
